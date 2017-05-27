@@ -4,12 +4,6 @@ from speech_part import return_speech_part_information
 from nltk.tokenize import PunktSentenceTokenizer, sent_tokenize
 
 
-#train_text = state_union.raw("2005-GWBush.txt")
-#sample_text = state_union.raw("2006-GWBush.txt")
-#sample = "Now we can finish up this part of speech tagging script"
-#custom_sent_tokenizer = PunktSentenceTokenizer(train_text)
-
-#tokenized = custom_sent_tokenizer.tokenize(sample_text)
 
 sample = state_union.raw("2006-GWBush.txt")
 
