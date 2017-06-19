@@ -3,10 +3,10 @@ from nltk.corpus import state_union
 from speech_part import return_speech_part_information
 from nltk.tokenize import PunktSentenceTokenizer, sent_tokenize
 
+# w tym module znajduja sie funkcja ktore odpowiadaja za przetwarzanie jezyka naturalego (rowniez wersje testowe)
 
 
-sample = state_union.raw("2006-GWBush.txt")
-
+# wykorzystujaca biblioteki nltk funkcja znajdujaca czesci mowy
 def training(sample_text):
     try:
         #print(train_text)
@@ -18,7 +18,7 @@ def training(sample_text):
     except Exception as e:
         print(str(e))
 
-
+# nieuzywana w edytorze funkcja wyszukajaca zwiazki wyrazowe
 def chunking(sample_text):
     try:
         #print(train_text)
@@ -48,8 +48,7 @@ def print_speech_table(sample_text):
         print('|%15s|%15s|%50s|%50s|' % (tagged[i][0], tagged[i][1], return_speech_part_information(tagged[i][1])[0],return_speech_part_information(tagged[i][1])[1]))
 
 
-#print(training(sample))
-#print(print_speech_table(sample))
+
 
 
 def example_text():

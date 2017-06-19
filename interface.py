@@ -1,18 +1,21 @@
 from nltk_main import Text_Statistics
 from tokenize_training import print_speech_table
 
+# w tym module znajduje sie nieuzywany w edytorze prototyp menu do wybierania
+#opcji przetwarzania tekstu (zywany byl tylko na poczatku)
+
 def menu():
     print ('Narzędzie do analizy wczytanego tekstu lub wpisanego zdania')
     print('-----------------------------------------')
     l = []
 
-    #a = input('wpisz nazwe pliku do analizy')
+
 
     for line in open("example.txt"):
         for word in line.split():
             l.append(word.lower())
 
-    #print (l)
+
     print ('-----------------------------------------------')
     print('Menu wyboru wybierz co chcesz zrobić')
     print('Wybierz 1 aby wyswietlic 50 najpopularniejszych slow')
@@ -43,6 +46,3 @@ if __name__ == "__main__":
 
 
 
-#print('------------------------------------------------')
-#print('50 najczesciej powtarzajacych sie slow w tescie')
-#print (Text_Statistics.word_frequency_list(l,50))

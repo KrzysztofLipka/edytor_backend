@@ -1,3 +1,4 @@
+# modul zawierajacy slownik zawierajacy czesci mowy oraz ich opisy
 
 def return_speech_part_information(part):
     for i in speech_parts:
@@ -42,6 +43,8 @@ speech_parts = {
 '.':	['.','?'],
 ',':	[',','?'],
 '!':	['!','?'],
+' ':	[' ','?'],
+'':	['','?'],
 ':':	['!','?'],
 
 'WRB':	['wh-abverb	where, when','?'],
