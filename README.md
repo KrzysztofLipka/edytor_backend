@@ -1,11 +1,16 @@
 # edytor_backend
 Projekt zwiazany ze studiami/Academic project.
+
 Część backendowa edytora tworzona w pythonie/ Backend part of editor created with python.
+
 Narzędzia/Tools:
 -Flask
 -Nltk
+
 PL
+
 Pliki:
+
 app.py - kontrolery do wywoływania odpowiednich usług na serwerze w odpowiedzi na żądania wywoływanie w edytorze tekstowym.
 
 nltk_main.py - funkcje i metody używane do przetwarzania wpisanego w edytorze tekstu.
@@ -21,7 +26,9 @@ repozytorium edytora : https://github.com/KrzysztofLipka/Web_text_editor_test_ve
 
 
 ENG
+
 Files:
+
 app.py - controllers created to processing requests from the text editor.
 
 nltk_main.py - functions and methods used to processing text from the text editor.
@@ -33,7 +40,7 @@ tokenize_training.py - module contains NLTK libary functions for machine learnin
 interface.py - module used to testing functions without text editor.
 
 
-foldery templates.static - zbuildowany edytor stworzony przy pomocy biblioteki react.js i edytora tekstowego draft.js
+foldery templates.static - builded editor created with react.js and draft,js text editor 
 repozytorium edytora : https://github.com/KrzysztofLipka/Web_text_editor_test_version
 
 
