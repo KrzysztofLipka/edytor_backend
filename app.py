@@ -1,5 +1,5 @@
 from flask import Flask, render_template, make_response , jsonify, request, url_for, json
-from nltk_main import Model, Text_Statistics,click_event_processing2, return_speech_parts_and_count,return_speech_part_dict, return_speech_parts
+from nltk_main import Model, Text_Statistics,click_event_processing, return_speech_parts_and_count, return_speech_parts
 app = Flask(__name__)
 
 # modul ktorego uruchomienie rozpoczyna dzialanie serwera
@@ -31,7 +31,7 @@ def index():
 def click_event():
     kursor_id = request.args.get('ID', 1, type=str)
     text = request.args.get('content', 1, type=str)
-    res =  click_event_processing2(kursor_id, text)
+    res =  click_event_processing(kursor_id, text)
     word = Model().Add_Synonyms(res[0])
     speech_part = return_speech_parts(res[1])
     return jsonify(synonims = word, speech_parts = speech_part)
