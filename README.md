@@ -41,6 +41,6 @@ interface.py - module used to testing functions without text editor.
 
 
 foldery templates.static - builded editor created with react.js and draft,js text editor 
-eitor repo : https://github.com/KrzysztofLipka/Web_text_editor_test_version
+editor repository : https://github.com/KrzysztofLipka/Web_text_editor_test_version
 
 
